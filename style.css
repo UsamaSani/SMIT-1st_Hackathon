@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.as:hover{
+    text-decoration: underline;
+}
+.topnav{
+    background-color: rgb(240, 238, 238);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.topnav a{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.topnav a img{
+    width: 1rem;
+    margin-left: 0.2rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 62%;
+}
+.left-side{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-side a{
+    margin: 0.3rem;
+}
+.coverImage{
+    background-image: url(./Images/backgroind\ image.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+}
+.hcomtent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hcomtent a{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.coverImage h1{
+    width: 90%;
+    font-size: 2rem;
+}
+.coverImage p{
+    width: 90%;
+}
+.multiOption{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+.mo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1rem ;
+    color: #0070d2;
+    padding: 1rem;
+}
+.scc{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1rem;
+}
+.scbtn{
+    margin: 0.5rem;
+}
+.scbtn a{
+    color: #0070d2;
+}
+.btn1{
+    border: 1px solid #0070d2;
+    padding: 0.4rem;
+    border-radius: 2rem;
+}
+
+.intro{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro h1{
+    text-align: center;
+}
+
+.intro a{
+    color: #0070d2;
+}
+.card{
+    border: none;
+    margin: 1rem;
+}
+.data{
+    margin: 1rem;
+    margin-top: 8rem;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.data h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.data a{
+    color: #0070d2;
+    margin-left: 1rem;
+}
+footer{
+    background-color: rgb(240, 238, 238);
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.f1{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+.btnf{
+    display: flex;
+    flex-direction: column;
+}
+.fi{
+    display: flex;
+    flex-direction: column;
+}
+.fi img{
+    width: 2rem;
+}
+.f2{
+    display: flex;
+    flex-direction: column;
+}
+.copy{
+    padding: 1rem;
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .intro iframe {
+        width: 68% !important;
+    }
+    .datat{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card{
+        border: none;
+    }
+    .cards{
+        width: 45%;
+    }
+    .f2{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .f2 a{
+        margin: 1rem;
+    }
+    .btnf{
+        flex-direction: row;
+
+    }
+    .btnf a{
+        margin: 1rem;
+    }
+    .btn1{
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    nav {
+        flex-direction: row !important;
+    }
+    .right-side {
+        flex-direction: row !important;
+    }
+    .left-side{
+        width: 30%;
+    }
+    .mo{
+        width: 15%;
+    }
+    .coverImage{
+        justify-content: start;
+    }
+    .hcomtent h1{
+        font-size: 4rem;
+    }
+    .hcomtent{
+        width: 50%;
+        align-items: start;
+        margin-left: 2rem;
+    }
+    .sc{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sci{
+        width: 40%;
+    }
+    .scc{
+        width: 50%;
+        padding: 1rem;
+    }
+    .scc h1{
+        margin-bottom: 2rem;
+    }
+    .scc p{
+        margin-bottom: 2rem;
+    }
+    .sc1 .sci{
+        display: flex;
+        order: 1 !important;
+
+    }
+    .intro{
+        margin-top: 10rem !important;
+    }
+    .intro iframe {
+        width: 68% !important;
+        height: 25rem !important;
+    }
+    .datat{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .topdata{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 1rem;
+    }
+    .datat h2{
+        text-align: center;
+        text-align: start;
+    }
+    .card{
+        width: 30% !important;
+        border: none;
+    }
+    .btnf{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .btnf a{
+        margin: 1rem;
+    }
+    .fi{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .fi img{
+        margin: 1rem;
+    }
+    .f2{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .f2 a{
+        margin: 1rem;
+    }
+    .topnav{
+        justify-content: end;
+    }
+    .right-side{
+        justify-content: start;
+    }
+    .right-side a{
+        margin-left: 1rem;
+    }
+    .left-side{
+        justify-content: end;
+    }
+    .left-side a{
+        margin-left: 1rem;
+    }
+    .btn1{
+        padding: 1rem;
+    }
+}
